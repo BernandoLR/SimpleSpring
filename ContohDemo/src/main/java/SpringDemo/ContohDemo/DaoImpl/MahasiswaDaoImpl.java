@@ -37,14 +37,4 @@ public class MahasiswaDaoImpl implements MahasiswaDao
 		em.getTransaction().commit();
 		return saved;
 	}
-	
-	@Override
-	public Mahasiswa saveorUpdate(Mahasiswa mahasiswa) {
-		EntityManager em = emf.createEntityManager();
-		em.getTransaction().begin();
-		Mahasiswa saved = em.merge(mahasiswa);
-		em.getTransaction().commit();
-		return saved;
-	}
-	
 }
