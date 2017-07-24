@@ -16,6 +16,7 @@ public class MahasiswaDaoImpl implements MahasiswaDao
 {
 	//Dao Impl
 	private EntityManagerFactory emf;
+	public int used;
 	
 	@Autowired
 	public void setEmf(EntityManagerFactory emf) {
