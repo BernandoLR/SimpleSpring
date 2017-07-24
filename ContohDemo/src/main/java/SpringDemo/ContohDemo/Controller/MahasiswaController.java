@@ -13,6 +13,7 @@ import SpringDemo.ContohDemo.Model.Mahasiswa;
 @Controller
 public class MahasiswaController 
 {
+	public int value;
 	private MahasiswaDao mhsDao;
 	
 	@Autowired
