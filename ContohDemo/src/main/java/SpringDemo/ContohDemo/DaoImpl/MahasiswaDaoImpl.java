@@ -27,7 +27,7 @@ public class MahasiswaDaoImpl implements MahasiswaDao
 	public List<Mahasiswa> listMahasiswa() 
 	{
 		EntityManager em = emf.createEntityManager();
-		return em.createQuery("from mahasiswa", Mahasiswa.class).getResultList();
+		return em.createQuery("from Mahasiswa", Mahasiswa.class).getResultList();
 	}
 
 	@Override
